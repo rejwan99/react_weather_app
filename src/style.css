@@ -1,8 +1,8 @@
 .container{
     width: 100%;
-    height:  100vh;
+    height:  100%;
     text-align: center;
-    padding-top: 30px;
+    padding: 30px 0px;
     background-color: #abd699;
 }
 .weather {
@@ -13,6 +13,10 @@
     text-align: center;
     color: white;
     background: linear-gradient(130deg, rgb(123, 207, 233), rgb(247, 253, 212));
+}
+.w_heading{
+    padding: 0px !important;
+    margin : 5px;
 }
 .search{
     display: flex;
@@ -49,41 +53,49 @@
     font-size: 50px;
     font-weight: 400;
     margin-top: 5px;
+    margin: 0px !important;
     color: black;
 }
+.feels_p{
+    margin: 0px !important;
+}
+
 .winfo h2{
     font-size: 30px;
     font-weight: 300;
-    margin-top: -40px;
+    margin: 0px !important;
     color: black;
 }
 .winfo p{
     color: black;
 }
-.winfo img{
-    margin-top: 20px;
-    width: 150px;
+.winfo-img{
+    margin-top: 5px;
+    height: 110px;
+    /* width: 128px; */
 }
 .details{
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0px 20px;
-    margin-top: 50px;
 }
 .details .col{
     display: flex;
     align-items: center;
     text-align: left;
 }
-.details .col img{
-    width: 65px;
-    margin-right: 10px;
+.humidity, .wind, .sunrise, .sunset{
+    font-size: 15px;
 }
-.humidity, .wind{
-    font-size: 20px;
+.humidityimg, .windimg, .sunriseimg, .sunsetimg{
+   height: 40px;
+   width: 40px;
+   margin: 7px;
+   margin-right: 12px;
 }
-.humidity p, .wind p{
+.humidity p, .wind p, .sunrise p, .sunset p{
     margin: 0px;
 }
 .error{
